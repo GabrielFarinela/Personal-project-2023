@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Ex2</title>
+</head>
+<body>
+  <div class="container">
+    <div class="ex1">
+      <table>
+        <caption>Artistas e suas músicas de sucesso</caption>
+        <tr>
+          <th>Artista</th>
+          <th>Música</th>
+          <th>Album</th>
+        </tr>
+        <tr>
+          <td>Pearl Jam</td>
+          <td>Alive</td>
+          <td>Ten</td>
+        </tr>
+        <tr>
+          <td>AC/DC</td>
+          <td>Black in Black</td>
+          <td>Black in Black</td>
+        </tr>
+        <tr>
+          <td>Aerosmith</td>
+          <td>Crazy</td>
+          <td>Big Ones</td>
+        </tr>
+        <tr>
+          <td>Bon Jovi</td>
+          <td>You Give Love a Bad Name</td>
+          <td>Big Slippery When Wet</td>
+        </tr>
+        <tr>
+          <td>U2</td>
+          <td>Sunday Bloody Sunday</td>
+          <td>War</td>
+        </tr>
+      </table>
+    </div>
+    <div class="ex2">
+      <form>
+        <fieldset>
+          <div class="formulario">
+            <label>Nome: 
+              <input class="input-text" placeholder="Digite seu nome completo" type="text">
+            </label>
+            <label>Idade: 
+              <input class="input-texto" placeholder="Idade" type="text">
+            </label>
+            <label>Email: 
+              <input class="input-text" placeholder="teste@gmail.com" type="text">
+            </label>
+            <label>Como chegou até nós:
+              <select class="input-texto">
+                  <option>Google</option>
+                  <option>Instagram</option>
+                  <option>Linkedin</option>
+              </select>
+            </label>
+            <span>Nos visitaria novamente: </span>
+            <div style="display: flex; flex-direction: row; gap: 10px;">
+                <div>
+                    <input type="radio">
+                    <label>Sim</label>
+                </div>
+                <div>
+                    <input type="radio">
+                    <label>Não</label chek>
+                </div>
+                <div>
+                    <input type="radio" checked>
+                    <label>Talvez</label>
+                </div>
+            </div>
+            <label>Comentários
+              <textarea cols="45" rows="4"></textarea>
+            </label>
+            <label> Desejo receber novidades por email
+              <input type="checkbox">
+            </label>
+            <div class="button">
+              <button type="submit">Enviar dados</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

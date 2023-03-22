@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 0 auto;
+  width: 60vw;
+  height: 100vh;
+}
+
+.ex1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 80%;
+}
+
+th {
+  background-color: rgb(236, 187, 113);
+  text-decoration: underline;
+}
+
+td:first-child {
+  text-align: center;
+}
+
+th, td {
+	border-bottom: 1px solid black;
+  margin-bottom: 1px;
+	padding: 10px;
+	text-align: start;
+}
+
+.ex2 {
+  display: flex;
+  justify-content: center;
+}
+
+fieldset {
+  border: none;
+}
+
+select, textarea {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  height: 40px;
+}
+
+.input-text {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.input-text:hover {
+  border-top: none;
+  border-bottom: 2px solid green;
+  background-color: rgb(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+}
+
+.input-texto {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  background-color: rgb(0, 0, 0, 0.1);
+  color: black;
+  border-radius: 5px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.button {
+  width: 200px;
+  height: 100px;
+}
+
+button {
+  padding: 10px 10px;
+  background-color: green;
+  color: black;
+  text-align: center;
+}
