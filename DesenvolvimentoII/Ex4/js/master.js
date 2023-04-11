@@ -6,7 +6,7 @@ const valorTotal = document.getElementById("valor-total");
 const presente1 = document.getElementById("presente1");
 const presente2 = document.getElementById("presente2");
 
-//   arredonda valor
+// arredonda valor
 function arred(d, casas) {
   let aux = Math.pow(10, casas)
   return Math.floor(d * aux) / aux
@@ -33,18 +33,15 @@ function calculaPrecoTotal() {
   return result
 }
 
-function escreveValorTotal(total) {
-  const result = floatToText(calculaPrecoTotal())
+function escreveValorTotal() {
+  let result = calculaPrecoTotal()
+  if(presente1.checked && quantidadeLivro1.value > 0)
+    result = result + 5
+  if(presente2.checked  && quantidadeLivro2.value > 0)
+    result = result + 5
   valorTotal.innerText = floatToText(result)
 }
 
 document.addEventListener("DOMContentLoaded", function (event) {
   console.log("DOM carregado");
 });
-
-
-
-
-
-
-
