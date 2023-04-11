@@ -6,6 +6,9 @@ const valorTotal = document.getElementById("valor-total");
 const presente1 = document.getElementById("presente1");
 const presente2 = document.getElementById("presente2");
 
+const objLivro1 = { titulo: 'Engenharia de Software', autor: 'Engenharia de Software', preco: '194,24' };
+const objLivro2 = { titulo: 'Inteligência Artificial', autor: 'Stuart Russel, Peter Norvig', preco: '200,00' };
+
 // arredonda valor
 function arred(d, casas) {
   let aux = Math.pow(10, casas)
