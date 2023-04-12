@@ -75,8 +75,7 @@ section {
 }
 
 #total {
-  /* border: 1px solid red; */
-  align-self: flex-end;
+  align-self: flex-start;
   font-weight: bold;
 }
 

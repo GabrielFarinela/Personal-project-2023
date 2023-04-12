@@ -28,6 +28,9 @@
         </header>
         <section>
             <article>
+
+            </article>
+            <article>
                 <div class="produto" id="prod_1">
                     <div>
                         <img class="miniatura" src="img/sommerville_es.jpeg" alt="Imagem do Produto">
@@ -40,12 +43,13 @@
                         <p>R$ <span id="livro1" class="valor">194,24</span></p>
                     </div>
                     <div class="quantidade">
-                        <input onchange="escreveValorTotal()" id="quantidadeLivro1" type="number" name="quantidade" min="1" max="5" size="2" value="0">
+                        <input onchange="calculaPrecoTotal()" id="quantidadeLivro1" type="number" name="quantidade" min="1" max="5" size="2" value="0">
                     </div>
                     <div class="presente">
                         <label>Para presente: </label>
                         <input id="presente1" type="checkbox">
                     </div>
+                    <button style="margin: 30px;" onclick="excluiProduto(this)">Excluir</button>
                 </div>
             </article>
             <article>
@@ -61,17 +65,24 @@
                         <p>R$ <span id="livro2" class="valor">200,00</span></p>
                     </div>
                     <div class="quantidade">
-                        <input onchange="escreveValorTotal()" id="quantidadeLivro2" type="number" name="quantidade" min="1" max="5" size="2" value="0">
+                        <input onchange="calculaPrecoTotal()" id="quantidadeLivro2" type="number" name="quantidade" min="1" max="5" size="2" value="0">
                     </div>
                     <div class="presente">
                         <label>Para presente: </label>
                         <input id="presente2" type="checkbox">
                     </div>
+                    <button style="margin: 30px;" onclick="excluiProduto(this)">Excluir</button>
                 </div>
             </article>
         </section>
         <div id="total">
             <p>Total <span id="valor-total"></span></p>
+        </div>
+        <div>
+            <button style="margin-bottom: 30px;" onclick="adicionaProduto()">Adicionar item</button>
+        </div>
+        <div>
+            <button style="margin-bottom: 30px;" onclick="removerProdutos()">Limpar carrinho</button>
         </div>
     </div>
     <script src="./js/master.js"></script>
