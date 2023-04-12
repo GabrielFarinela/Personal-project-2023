@@ -10,9 +10,9 @@ const objLivro1 = { titulo: 'Engenharia de Software', src: 'img/sommerville_es.j
 const objLivro2 = { titulo: 'Inteligência Artificial', src: 'img/norvig_ia.jpeg', autor: 'Stuart Russel, Peter Norvig', valor: '200,00' };
 
 function adicionaProduto() {
-  let novoArtigo = document.createElement("article");
+  let novoLivro = document.createElement("article");
 
-  novoArtigo.innerHTML = 
+  novoLivro.innerHTML = 
   `<div class="produto" id="prod_1">
   <div>
       <img class="miniatura" src=${objLivro1.src} alt="Imagem do Produto">
@@ -34,8 +34,8 @@ function adicionaProduto() {
   <button style="margin: 30px;" onclick="excluiProduto(this)">Excluir</button>
 </div>`
 
-  let artigoAnterior = document.querySelector("article:last-of-type");
-  artigoAnterior.parentNode.insertBefore(novoArtigo, artigoAnterior.nextSibling);
+  let livroAnterior = document.querySelector("article:last-of-type");
+  livroAnterior.parentNode.insertBefore(novoLivro, livroAnterior.nextSibling);
 }
 
 function excluiProduto(botao) {
