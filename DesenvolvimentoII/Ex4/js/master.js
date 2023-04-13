@@ -1,11 +1,3 @@
-const livro1 = document.getElementById("livro1");
-const livro2 = document.getElementById("livro2");
-const quantidadeLivro1 = document.getElementById("quantidadeLivro1");
-const quantidadeLivro2 = document.getElementById("quantidadeLivro2");
-const valorTotal = document.getElementById("valor-total");
-const presente1 = document.getElementById("presente1");
-const presente2 = document.getElementById("presente2");
-
 const objLivro1 = { titulo: 'Engenharia de Software', src: 'img/sommerville_es.jpeg', autor: 'Ian Sommerville', valor: '194,24' };
 const objLivro2 = { titulo: 'Inteligência Artificial', src: 'img/norvig_ia.jpeg', autor: 'Stuart Russel, Peter Norvig', valor: '200,00' };
 
@@ -72,6 +64,10 @@ function floatToText(float) {
 }
 
 function calculaPrecoTotal() {
+  let livro1 = document.getElementById("livro1");
+  let livro2 = document.getElementById("livro2");
+  let quantidadeLivro1 = document.getElementById("quantidadeLivro1");
+  let quantidadeLivro2 = document.getElementById("quantidadeLivro2");
   const valorLivro1 = textToFloat(livro1.textContent);
   const valorLivro2 = textToFloat(livro2.textContent);
   const qtdLivro1 = quantidadeLivro1.value;
@@ -81,6 +77,9 @@ function calculaPrecoTotal() {
 }
 
 function escreveValorTotal(result) {
+  let valorTotal = document.getElementById("valor-total");
+  let presente1 = document.getElementById("presente1");
+  let presente2 = document.getElementById("presente2");
   if(presente1.checked && quantidadeLivro1.value > 0)
     result = result + 5
   if(presente2.checked  && quantidadeLivro2.value > 0)

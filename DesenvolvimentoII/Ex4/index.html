@@ -43,11 +43,11 @@
                         <p>R$ <span id="livro1" class="valor">194,24</span></p>
                     </div>
                     <div class="quantidade">
-                        <input onchange="calculaPrecoTotal()" id="quantidadeLivro1" type="number" name="quantidade" min="1" max="5" size="2" value="0">
+                        <input onchange="calculaPrecoTotal()" id="quantidadeLivro1" type="number" name="quantidade" min="0" max="5" size="2" value="0">
                     </div>
                     <div class="presente">
                         <label>Para presente: </label>
-                        <input id="presente1" type="checkbox">
+                        <input onchange="calculaPrecoTotal()" id="presente1" type="checkbox">
                     </div>
                     <button style="margin: 30px;" onclick="excluiProduto(this)">Excluir</button>
                 </div>
@@ -65,11 +65,11 @@
                         <p>R$ <span id="livro2" class="valor">200,00</span></p>
                     </div>
                     <div class="quantidade">
-                        <input onchange="calculaPrecoTotal()" id="quantidadeLivro2" type="number" name="quantidade" min="1" max="5" size="2" value="0">
+                        <input onchange="calculaPrecoTotal()" id="quantidadeLivro2" type="number" name="quantidade" min="0" max="5" size="2" value="0">
                     </div>
                     <div class="presente">
                         <label>Para presente: </label>
-                        <input id="presente2" type="checkbox">
+                        <input onchange="calculaPrecoTotal()" id="presente2" type="checkbox">
                     </div>
                     <button style="margin: 30px;" onclick="excluiProduto(this)">Excluir</button>
                 </div>
